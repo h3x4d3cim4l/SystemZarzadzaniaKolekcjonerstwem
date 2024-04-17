@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemZarzadzaniaKolekcjonerstwem.MainPage">
+
+    <ScrollView>
+        <StackLayout>
+            <StackLayout x:Name="addCollectionFormLayout" Padding="300,0,300,0">
+                <Entry x:Name="collectionNameEntry"/>
+                <Button Text="Dodaj kolekcję" Clicked="addCollection_clicked"/>
+                <Button Text="Usuń kolekcję" Clicked="RemoveCollection_clicked"/>
+            </StackLayout>
+
+            <Label Text="Kolekcje: " Padding="0,50" FontSize="Large" HorizontalTextAlignment="Center"/>
+           
+
+            <FlexLayout x:Name="collectionListLayout" Direction="Row" Padding="10"  Wrap="Wrap" JustifyContent="Start" AlignItems="Center">
+
+            </FlexLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
